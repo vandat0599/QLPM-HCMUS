@@ -6,15 +6,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WindowsSQL;
+using WindowsSQL.DAO;
+using WindowsSQL.DTO;
+
 namespace DAO
 {
-    class UserDAO
+    class UserDAO: DAO<UserDTO>
     {
         DataProvider dp;
         public UserDAO()
         {
             dp = new DataProvider();
         }
+
+        public void create(UserDTO t)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void delete(UserDTO t)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<UserDTO> getAll()
+        {
+            throw new NotImplementedException();
+        }
+
         public DataTable kiemTraChuPhongMach(string Ten_dang_nhap,string Mat_khau)
         {
             string cmd = "select La_chu_phong_mach from USERS where Ten_dang_nhap = @Ten_dang_nhap and Mat_khau = @Mat_khau";
@@ -24,6 +43,11 @@ namespace DAO
             sqlParameters.Add(paramDang_nhap);
             sqlParameters.Add(paramMat_khau);
             return dp.ExecuteQuery(cmd, sqlParameters);
+        }
+
+        public void update(UserDTO t)
+        {
+            throw new NotImplementedException();
         }
     }
 }

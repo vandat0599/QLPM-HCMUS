@@ -6,9 +6,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WindowsSQL;
+using WindowsSQL.DAO;
+using WindowsSQL.DTO;
+
 namespace DAO
 {
-    class QuyDinhDAO
+    class QuyDinhDAO: DAO<QuyDinhDTO>
     {
         DataProvider dp;
         public QuyDinhDAO()
@@ -52,6 +55,26 @@ namespace DAO
             string cmd = "select So_luong from QUY_DINH where Loai = 'Thuoc'";
             DataTable dt = dp.ExecuteQuery(cmd);
             return dt.Rows[0].Field<int>(0);
+        }
+
+        public void create(QuyDinhDTO t)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void update(QuyDinhDTO t)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<QuyDinhDTO> getAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void delete(QuyDinhDTO t)
+        {
+            throw new NotImplementedException();
         }
     }
 }

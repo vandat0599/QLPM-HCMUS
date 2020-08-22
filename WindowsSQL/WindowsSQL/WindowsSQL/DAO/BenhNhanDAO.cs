@@ -6,10 +6,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WindowsSQL;
+using WindowsSQL.DTO;
+using WindowsSQL.DAO;
 
 namespace DAO
 {
-    class BenhNhanDAO
+    class BenhNhanDAO : DAO<BenhNhanDTO>
     {
         DataProvider dp;
         public BenhNhanDAO()
@@ -40,6 +42,26 @@ namespace DAO
         {
             string cmd = "select * from BENH_NHAN";
             return dp.ExecuteQuery(cmd);
+        }
+
+        public void create(BenhNhanDTO t)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void update(BenhNhanDTO t)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<BenhNhanDTO> getAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void delete(BenhNhanDTO t)
+        {
+            throw new NotImplementedException();
         }
     }
 }

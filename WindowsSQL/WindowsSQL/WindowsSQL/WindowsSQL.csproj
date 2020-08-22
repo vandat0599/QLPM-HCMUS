@@ -47,9 +47,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS\BenhNhanBUS.cs" />
+    <Compile Include="BUS\CachDungBUS.cs" />
+    <Compile Include="BUS\DonThuocBUS.cs" />
+    <Compile Include="BUS\DonViTinhBUS.cs" />
+    <Compile Include="BUS\LoaiBenhBUS.cs" />
+    <Compile Include="BUS\PhieuKhamBenhBUS.cs" />
+    <Compile Include="BUS\QuyDinhBUS.cs" />
+    <Compile Include="BUS\ThuocBUS.cs" />
+    <Compile Include="BUS\UserBUS.cs" />
+    <Compile Include="Common\BUS.cs" />
     <Compile Include="DAO\BenhNhanDAO.cs" />
     <Compile Include="Common\DataProvider.cs" />
+    <Compile Include="DAO\CachDungDAO.cs" />
+    <Compile Include="Common\DAO.cs" />
+    <Compile Include="DAO\DonThuocDAO.cs" />
     <Compile Include="DAO\DonViTinhDAO.cs" />
+    <Compile Include="DAO\LoaiBenhDAO.cs" />
+    <Compile Include="DAO\ThuocDAO.cs" />
     <Compile Include="DTO\BenhNhanDTO.cs" />
     <Compile Include="DTO\CachDungDTO.cs" />
     <Compile Include="DTO\DonThuocDTO.cs" />
@@ -59,52 +74,52 @@
     <Compile Include="DTO\QuyDinhDTO.cs" />
     <Compile Include="DTO\ThuocDTO.cs" />
     <Compile Include="DTO\UserDTO.cs" />
-    <Compile Include="UI\Form2.cs">
+    <Compile Include="UI\DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="UI\DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Form_Bac_Si.cs">
+    <Compile Include="UI\BacSi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Form_Bac_Si.Designer.cs">
-      <DependentUpon>Form_Bac_Si.cs</DependentUpon>
+    <Compile Include="UI\BacSi.Designer.cs">
+      <DependentUpon>BacSi.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Form_Quan_Ly.cs">
+    <Compile Include="UI\QuanLy.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Form_Quan_Ly.Designer.cs">
-      <DependentUpon>Form_Quan_Ly.cs</DependentUpon>
+    <Compile Include="UI\QuanLy.Designer.cs">
+      <DependentUpon>QuanLy.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Form_tao_phieu_kham_benh.cs">
+    <Compile Include="UI\PhieuKhamBenh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Form_tao_phieu_kham_benh.Designer.cs">
-      <DependentUpon>Form_tao_phieu_kham_benh.cs</DependentUpon>
+    <Compile Include="UI\PhieuKhamBenh.Designer.cs">
+      <DependentUpon>PhieuKhamBenh.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Form_them_benh_nhan.cs">
+    <Compile Include="UI\QuanLyBenhNhan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Form_them_benh_nhan.Designer.cs">
-      <DependentUpon>Form_them_benh_nhan.cs</DependentUpon>
+    <Compile Include="UI\QuanLyBenhNhan.Designer.cs">
+      <DependentUpon>QuanLyBenhNhan.cs</DependentUpon>
     </Compile>
     <Compile Include="DAO\PhieuKhamBenhDAO.cs" />
     <Compile Include="Common\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DAO\QuyDinhDAO.cs" />
     <Compile Include="DAO\UserDAO.cs" />
-    <EmbeddedResource Include="UI\Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="UI\DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Form_Bac_Si.resx">
-      <DependentUpon>Form_Bac_Si.cs</DependentUpon>
+    <EmbeddedResource Include="UI\BacSi.resx">
+      <DependentUpon>BacSi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Form_tao_phieu_kham_benh.resx">
-      <DependentUpon>Form_tao_phieu_kham_benh.cs</DependentUpon>
+    <EmbeddedResource Include="UI\PhieuKhamBenh.resx">
+      <DependentUpon>PhieuKhamBenh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Form_them_benh_nhan.resx">
-      <DependentUpon>Form_them_benh_nhan.cs</DependentUpon>
+    <EmbeddedResource Include="UI\QuanLyBenhNhan.resx">
+      <DependentUpon>QuanLyBenhNhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -131,7 +146,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BUS\" />
     <Folder Include="Utils\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

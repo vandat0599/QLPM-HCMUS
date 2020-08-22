@@ -23,5 +23,10 @@ namespace WindowsSQL
             //dgv = _DAO.Danh_sach_don_thuoc();
 
         }
+
+        private void dgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

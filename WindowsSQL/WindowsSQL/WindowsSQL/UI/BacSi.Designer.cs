@@ -35,7 +35,7 @@
             // btnThem_benh_nhan
             // 
             this.btnThem_benh_nhan.Location = new System.Drawing.Point(100, 13);
-            this.btnThem_benh_nhan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThem_benh_nhan.Margin = new System.Windows.Forms.Padding(4);
             this.btnThem_benh_nhan.Name = "btnThem_benh_nhan";
             this.btnThem_benh_nhan.Size = new System.Drawing.Size(169, 28);
             this.btnThem_benh_nhan.TabIndex = 0;
@@ -46,7 +46,7 @@
             // btnTao_phieu_kham_benh
             // 
             this.btnTao_phieu_kham_benh.Location = new System.Drawing.Point(100, 69);
-            this.btnTao_phieu_kham_benh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTao_phieu_kham_benh.Margin = new System.Windows.Forms.Padding(4);
             this.btnTao_phieu_kham_benh.Name = "btnTao_phieu_kham_benh";
             this.btnTao_phieu_kham_benh.Size = new System.Drawing.Size(169, 28);
             this.btnTao_phieu_kham_benh.TabIndex = 1;
@@ -61,7 +61,7 @@
             this.ClientSize = new System.Drawing.Size(396, 395);
             this.Controls.Add(this.btnTao_phieu_kham_benh);
             this.Controls.Add(this.btnThem_benh_nhan);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_Bac_Si";
             this.Text = "Form_Bac_Si";
             this.Load += new System.EventHandler(this.Form_Bac_Si_Load);
