@@ -4,35 +4,45 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WindowsSQL.Common;
+using WindowsSQL.DAO;
 using WindowsSQL.DTO;
 
 namespace WindowsSQL.BUS
 {
     class LoaiBenhBUS : BUS<LoaiBenhDTO>
     {
+
+        LoaiBenhDAO dao;
+
+        public LoaiBenhBUS()
+        {
+            dao = new LoaiBenhDAO();
+        }
+
         public bool create(LoaiBenhDTO t)
         {
-            throw new NotImplementedException();
+            t.Id = dao.getAll().Count + 1;
+            return dao.create(t);
         }
 
         public bool delete(LoaiBenhDTO t)
         {
-            throw new NotImplementedException();
+            return dao.delete(t);
         }
 
         public List<LoaiBenhDTO> getAll()
         {
-            throw new NotImplementedException();
+            return dao.getAll();
         }
 
         public LoaiBenhDTO getById(int id)
         {
-            throw new NotImplementedException();
+            return dao.getById(id);
         }
 
         public bool update(LoaiBenhDTO t)
         {
-            throw new NotImplementedException();
+            return dao.update(t);
         }
     }
 }

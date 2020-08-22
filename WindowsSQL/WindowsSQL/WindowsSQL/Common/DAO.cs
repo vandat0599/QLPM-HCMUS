@@ -8,6 +8,7 @@ namespace WindowsSQL.DAO
 {
     interface DAO<T>
     {
+
         bool create(T t);
         bool update(T t);
         List<T> getAll();

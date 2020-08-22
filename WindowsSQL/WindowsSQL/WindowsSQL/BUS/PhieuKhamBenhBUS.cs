@@ -10,29 +10,37 @@ namespace WindowsSQL.BUS
 {
     class PhieuKhamBenhBUS : BUS<PhieuKhamBenhDTO>
     {
+
+        PhieuKhamBenhDAO dao;
+
+        public PhieuKhamBenhBUS()
+        {
+            dao = new PhieuKhamBenhDAO();
+        }
         public bool create(PhieuKhamBenhDTO t)
         {
-            throw new NotImplementedException();
+            t.Id = dao.getAll().Count + 1;
+            return dao.create(t);
         }
 
         public bool delete(PhieuKhamBenhDTO t)
         {
-            throw new NotImplementedException();
+            return dao.delete(t);
         }
 
         public List<PhieuKhamBenhDTO> getAll()
         {
-            throw new NotImplementedException();
+            return dao.getAll();
         }
 
         public PhieuKhamBenhDTO getById(int id)
         {
-            throw new NotImplementedException();
+            return dao.getById(id);
         }
 
         public bool update(PhieuKhamBenhDTO t)
         {
-            throw new NotImplementedException();
+            return dao.update(t);
         }
     }
 }

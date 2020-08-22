@@ -18,68 +18,65 @@ namespace DAO
         {
             dp = new DataProvider();
         }
-        public bool quyDinhThayDoiSoBenhNhan(int n)
-        {
-            string cmd = "update QUY_DINH set So_luong = @So_luong";
-            List<SqlParameter> sqlParameters = new List<SqlParameter>();
-            SqlParameter paramSo_luong = new SqlParameter("So_luong",n);
-            sqlParameters.Add(paramSo_luong);
-            return dp.ExecuteNonQuery(cmd, sqlParameters);
-        }
-        public int getMaxBenhNhan()
-        {
-            string cmd = "select So_luong from QUY_DINH where Loai = 'Benh_nhan'";
-            DataTable dt= dp.ExecuteQuery(cmd);
-            return dt.Rows[0].Field<int>(0);
-        }
-        public int getMaxDonViTinh()
-        {
-            string cmd = "select So_luong from QUY_DINH where Loai = 'Don_vi_tinh'";
-            DataTable dt = dp.ExecuteQuery(cmd);
-            return dt.Rows[0].Field<int>(0);
-        }
-        public int getMaxCachDung()
-        {
-            string cmd = "select So_luong from QUY_DINH where Loai = 'Cach_dung'";
-            DataTable dt = dp.ExecuteQuery(cmd);
-            return dt.Rows[0].Field<int>(0);
-        }
-        public int getMaxLoaiBenh()
-        {
-            string cmd = "select So_luong from QUY_DINH where Loai = 'Loai_benh'";
-            DataTable dt = dp.ExecuteQuery(cmd);
-            return dt.Rows[0].Field<int>(0);
-        }
-        public int getMaxThuoc()
-        {
-            string cmd = "select So_luong from QUY_DINH where Loai = 'Thuoc'";
-            DataTable dt = dp.ExecuteQuery(cmd);
-            return dt.Rows[0].Field<int>(0);
-        }
 
         public bool create(QuyDinhDTO t)
         {
-            throw new NotImplementedException();
+            string cmd = "insert into QUY_DINH(Loai,So_luong) values (@Loai,@So_luong)";
+            List<SqlParameter> sqlParameters = new List<SqlParameter>();
+            SqlParameter p1 = new SqlParameter("Loai", t.Loai);
+            SqlParameter p2 = new SqlParameter("So_luong", t.SoLuong);
+            sqlParameters.Add(p1);
+            sqlParameters.Add(p2);
+            return dp.ExecuteNonQuery(cmd, sqlParameters);
         }
 
         public bool update(QuyDinhDTO t)
         {
-            throw new NotImplementedException();
+            string cmd = "update QUY_DINH set So_luong = @So_luong where Loai = @Loai";
+            List<SqlParameter> sqlParameters = new List<SqlParameter>();
+            SqlParameter p1 = new SqlParameter("So_luong", t.SoLuong);
+            SqlParameter p2 = new SqlParameter("Loai", t.Loai);
+            sqlParameters.Add(p1);
+            sqlParameters.Add(p2);
+            return dp.ExecuteNonQuery(cmd, sqlParameters);
         }
 
         public List<QuyDinhDTO> getAll()
         {
-            throw new NotImplementedException();
+            string cmd = "select * from QUY_DINH";
+            DataTable data = dp.ExecuteQuery(cmd);
+            List<QuyDinhDTO> result = new List<QuyDinhDTO>();
+            foreach (DataRow row in data.Rows)
+            {
+                result.Add(new QuyDinhDTO(
+                    loai: row["Loai"].ToString(),
+                    soLuong: Convert.ToInt32(row["So_luong"]))
+                    );
+            }
+            return result;
         }
 
         public bool delete(QuyDinhDTO t)
         {
-            throw new NotImplementedException();
+            string cmd = "DELETE FROM QUY_DINH WHERE Loai = @Loai";
+            List<SqlParameter> sqlParameters = new List<SqlParameter>();
+            SqlParameter idParam = new SqlParameter("Loai", t.Loai);
+            sqlParameters.Add(idParam);
+            return dp.ExecuteNonQuery(cmd, sqlParameters);
         }
 
         public QuyDinhDTO getById(int id)
         {
-            throw new NotImplementedException();
+            string cmd = "select * from PHIEU_KHAM_BENH where ID_phieu_kham_benh = @id";
+            DataTable data = dp.ExecuteQuery(cmd);
+            if (data.Rows.Count <= 0)
+            {
+                return null;
+            }
+            DataRow row = data.Rows[0];
+            return new QuyDinhDTO(
+                    loai: row["Loai"].ToString(),
+                    soLuong: Convert.ToInt32(row["So_luong"]));
         }
     }
 }

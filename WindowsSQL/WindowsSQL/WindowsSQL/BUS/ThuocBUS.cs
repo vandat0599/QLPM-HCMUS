@@ -4,35 +4,45 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WindowsSQL.Common;
+using WindowsSQL.DAO;
 using WindowsSQL.DTO;
 
 namespace WindowsSQL.BUS
 {
     class ThuocBUS : BUS<ThuocDTO>
     {
+
+        ThuocDAO dao;
+
+        public ThuocBUS()
+        {
+            dao = new ThuocDAO();
+        }
+
         public bool create(ThuocDTO t)
         {
-            throw new NotImplementedException();
+            t.Id = dao.getAll().Count + 1;
+            return dao.create(t);
         }
 
         public bool delete(ThuocDTO t)
         {
-            throw new NotImplementedException();
+            return dao.delete(t);
         }
 
         public List<ThuocDTO> getAll()
         {
-            throw new NotImplementedException();
+            return dao.getAll();
         }
 
         public ThuocDTO getById(int id)
         {
-            throw new NotImplementedException();
+            return dao.getById(id);
         }
 
         public bool update(ThuocDTO t)
         {
-            throw new NotImplementedException();
+            return dao.update(t);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,29 +11,45 @@ namespace WindowsSQL.BUS
 {
     class UserBUS : BUS<UserDTO>
     {
+
+        UserDAO dao;
+
+        public UserBUS()
+        {
+            dao = new UserDAO();
+        }
+
         public bool create(UserDTO t)
         {
-            throw new NotImplementedException();
+            List<UserDTO> users = dao.getAll();
+            foreach(UserDTO user in users)
+            {
+                if (user.UserName.Equals(t.UserName))
+                {
+                    return false;
+                }
+            }
+            return dao.create(t);
         }
 
         public bool delete(UserDTO t)
         {
-            throw new NotImplementedException();
+            return dao.delete(t);
         }
 
         public List<UserDTO> getAll()
         {
-            throw new NotImplementedException();
+            return dao.getAll();
         }
 
         public UserDTO getById(int id)
         {
-            throw new NotImplementedException();
+            return dao.getById(id);
         }
 
         public bool update(UserDTO t)
         {
-            throw new NotImplementedException();
+            return dao.update(t);
         }
     }
 }

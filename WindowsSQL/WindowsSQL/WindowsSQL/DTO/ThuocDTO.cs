@@ -10,23 +10,23 @@ namespace WindowsSQL.DTO
     {
         string tenThuoc;
         int id;
-        int donViTinh;
+        int idDonViTinh;
         int idCachDung;
-        float giaDonVi;
+        double giaDonVi;
 
-        public ThuocDTO(string tenThuoc, int id, int donViTinh, int idCachDung, float giaDonVi)
+        public ThuocDTO(string tenThuoc, int id, int idDonViTinh, int idCachDung, double giaDonVi)
         {
             this.tenThuoc = tenThuoc;
             this.id = id;
-            this.donViTinh = donViTinh;
+            this.idDonViTinh = idDonViTinh;
             this.idCachDung = idCachDung;
             this.giaDonVi = giaDonVi;
         }
 
         public string TenThuoc { get => tenThuoc; set => tenThuoc = value; }
         public int Id { get => id; set => id = value; }
-        public int DonViTinh { get => donViTinh; set => donViTinh = value; }
+        public int IdDonViTinh { get => idDonViTinh; set => idDonViTinh = value; }
         public int IdCachDung { get => idCachDung; set => idCachDung = value; }
-        public float GiaDonVi { get => giaDonVi; set => giaDonVi = value; }
+        public double GiaDonVi { get => giaDonVi; set => giaDonVi = value; }
     }
 }
