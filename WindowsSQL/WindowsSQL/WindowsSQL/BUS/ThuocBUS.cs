@@ -25,6 +25,11 @@ namespace WindowsSQL.BUS
             throw new NotImplementedException();
         }
 
+        public ThuocDTO getById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public void update(ThuocDTO t)
         {
             throw new NotImplementedException();

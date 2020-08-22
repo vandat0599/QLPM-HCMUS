@@ -25,6 +25,11 @@ namespace WindowsSQL.BUS
             throw new NotImplementedException();
         }
 
+        public QuyDinhDTO getById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public void update(QuyDinhDTO t)
         {
             throw new NotImplementedException();

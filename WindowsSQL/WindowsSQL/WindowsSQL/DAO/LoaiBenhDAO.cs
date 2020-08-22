@@ -24,6 +24,11 @@ namespace WindowsSQL.DAO
             throw new NotImplementedException();
         }
 
+        public LoaiBenhDTO getById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public void update(LoaiBenhDTO t)
         {
             throw new NotImplementedException();

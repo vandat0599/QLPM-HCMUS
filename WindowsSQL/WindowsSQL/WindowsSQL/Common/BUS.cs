@@ -11,6 +11,7 @@ namespace WindowsSQL.Common
         void create(T t);
         void update(T t);
         List<T> getAll();
+        T getById(int id);
         void delete(T t);
     }
 }

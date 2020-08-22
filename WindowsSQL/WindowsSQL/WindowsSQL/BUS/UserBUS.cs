@@ -10,6 +10,11 @@ namespace WindowsSQL.BUS
 {
     class UserBUS : BUS<UserDTO>
     {
+        public UserDTO getById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         void BUS<UserDTO>.create(UserDTO t)
         {
             throw new NotImplementedException();

@@ -25,6 +25,11 @@ namespace WindowsSQL.BUS
             throw new NotImplementedException();
         }
 
+        public DonViTinhDTO getById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public void update(DonViTinhDTO t)
         {
             throw new NotImplementedException();

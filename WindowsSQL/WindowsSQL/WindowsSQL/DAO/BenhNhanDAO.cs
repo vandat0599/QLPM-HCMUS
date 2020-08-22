@@ -63,5 +63,10 @@ namespace DAO
         {
             throw new NotImplementedException();
         }
+
+        public BenhNhanDTO getById(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

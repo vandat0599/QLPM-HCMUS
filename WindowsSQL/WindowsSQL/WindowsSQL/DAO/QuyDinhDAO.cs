@@ -76,5 +76,10 @@ namespace DAO
         {
             throw new NotImplementedException();
         }
+
+        public QuyDinhDTO getById(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

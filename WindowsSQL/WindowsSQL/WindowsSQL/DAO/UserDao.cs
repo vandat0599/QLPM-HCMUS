@@ -34,6 +34,11 @@ namespace DAO
             throw new NotImplementedException();
         }
 
+        public UserDTO getById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public DataTable kiemTraChuPhongMach(string Ten_dang_nhap,string Mat_khau)
         {
             string cmd = "select La_chu_phong_mach from USERS where Ten_dang_nhap = @Ten_dang_nhap and Mat_khau = @Mat_khau";

@@ -25,6 +25,11 @@ namespace WindowsSQL.BUS
             throw new NotImplementedException();
         }
 
+        public CachDungDTO getById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public void update(CachDungDTO t)
         {
             throw new NotImplementedException();
