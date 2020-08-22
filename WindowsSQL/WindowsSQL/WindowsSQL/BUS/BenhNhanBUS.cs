@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,29 +11,38 @@ namespace WindowsSQL.BUS
 {
     class BenhNhanBUS : BUS<BenhNhanDTO>
     {
-        public void create(BenhNhanDTO t)
+
+        BenhNhanDAO dao;
+
+        public BenhNhanBUS()
         {
-            throw new NotImplementedException();
+            dao = new BenhNhanDAO();
         }
 
-        public void delete(BenhNhanDTO t)
+        public bool create(BenhNhanDTO t)
         {
-            throw new NotImplementedException();
+            t.Id = dao.getAll().Count + 1;
+            return dao.create(t);
+        }
+
+        public bool delete(BenhNhanDTO t)
+        {
+            return dao.delete(t);
         }
 
         public List<BenhNhanDTO> getAll()
         {
-            throw new NotImplementedException();
+            return dao.getAll();
         }
 
         public BenhNhanDTO getById(int id)
         {
-            throw new NotImplementedException();
+            return dao.getById(id);
         }
 
-        public void update(BenhNhanDTO t)
+        public bool update(BenhNhanDTO t)
         {
-            throw new NotImplementedException();
+            return dao.update(t);
         }
     }
 }

@@ -57,12 +57,12 @@ namespace DAO
             return dt.Rows[0].Field<int>(0);
         }
 
-        public void create(QuyDinhDTO t)
+        public bool create(QuyDinhDTO t)
         {
             throw new NotImplementedException();
         }
 
-        public void update(QuyDinhDTO t)
+        public bool update(QuyDinhDTO t)
         {
             throw new NotImplementedException();
         }
@@ -72,7 +72,7 @@ namespace DAO
             throw new NotImplementedException();
         }
 
-        public void delete(QuyDinhDTO t)
+        public bool delete(QuyDinhDTO t)
         {
             throw new NotImplementedException();
         }

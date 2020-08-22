@@ -19,12 +19,12 @@ namespace DAO
             dp = new DataProvider();
         }
 
-        public void create(UserDTO t)
+        public bool create(UserDTO t)
         {
             throw new NotImplementedException();
         }
 
-        public void delete(UserDTO t)
+        public bool delete(UserDTO t)
         {
             throw new NotImplementedException();
         }
@@ -50,7 +50,7 @@ namespace DAO
             return dp.ExecuteQuery(cmd, sqlParameters);
         }
 
-        public void update(UserDTO t)
+        public bool update(UserDTO t)
         {
             throw new NotImplementedException();
         }

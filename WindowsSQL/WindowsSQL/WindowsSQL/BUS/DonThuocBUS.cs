@@ -10,12 +10,12 @@ namespace WindowsSQL.BUS
 {
     class DonThuocBUS : BUS<DonThuocDTO>
     {
-        public void create(DonThuocDTO t)
+        public bool create(DonThuocDTO t)
         {
             throw new NotImplementedException();
         }
 
-        public void delete(DonThuocDTO t)
+        public bool delete(DonThuocDTO t)
         {
             throw new NotImplementedException();
         }
@@ -30,7 +30,7 @@ namespace WindowsSQL.BUS
             throw new NotImplementedException();
         }
 
-        public void update(DonThuocDTO t)
+        public bool update(DonThuocDTO t)
         {
             throw new NotImplementedException();
         }

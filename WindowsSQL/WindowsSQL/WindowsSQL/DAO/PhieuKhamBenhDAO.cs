@@ -9,20 +9,14 @@ using WindowsSQL.DTO;
 
 namespace WindowsSQL
 {
-    class PhieuKhamBenhDAO: DAO<PhieuKhamBenhDTO>
+    class PhieuKhamBenhDAO : DAO<PhieuKhamBenhDTO>
     {
-        DataProvider dp;
-        public PhieuKhamBenhDAO()
-        {
-            dp = new DataProvider();
-        }
-
-        public void create(PhieuKhamBenhDTO t)
+        public bool create(PhieuKhamBenhDTO t)
         {
             throw new NotImplementedException();
         }
 
-        public void delete(PhieuKhamBenhDTO t)
+        public bool delete(PhieuKhamBenhDTO t)
         {
             throw new NotImplementedException();
         }
@@ -37,7 +31,7 @@ namespace WindowsSQL
             throw new NotImplementedException();
         }
 
-        public void update(PhieuKhamBenhDTO t)
+        public bool update(PhieuKhamBenhDTO t)
         {
             throw new NotImplementedException();
         }

@@ -9,12 +9,12 @@ namespace WindowsSQL.DAO
 {
     class DonThuocDAO : DAO<DonThuocDTO>
     {
-        public void create(DonThuocDTO t)
+        public bool create(DonThuocDTO t)
         {
             throw new NotImplementedException();
         }
 
-        public void delete(DonThuocDTO t)
+        public bool delete(DonThuocDTO t)
         {
             throw new NotImplementedException();
         }
@@ -29,7 +29,7 @@ namespace WindowsSQL.DAO
             throw new NotImplementedException();
         }
 
-        public void update(DonThuocDTO t)
+        public bool update(DonThuocDTO t)
         {
             throw new NotImplementedException();
         }

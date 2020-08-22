@@ -10,12 +10,12 @@ namespace WindowsSQL.BUS
 {
     class DonViTinhBUS : BUS<DonViTinhDTO>
     {
-        public void create(DonViTinhDTO t)
+        public bool create(DonViTinhDTO t)
         {
             throw new NotImplementedException();
         }
 
-        public void delete(DonViTinhDTO t)
+        public bool delete(DonViTinhDTO t)
         {
             throw new NotImplementedException();
         }
@@ -30,7 +30,7 @@ namespace WindowsSQL.BUS
             throw new NotImplementedException();
         }
 
-        public void update(DonViTinhDTO t)
+        public bool update(DonViTinhDTO t)
         {
             throw new NotImplementedException();
         }

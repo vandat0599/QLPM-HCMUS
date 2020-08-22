@@ -10,12 +10,12 @@ namespace WindowsSQL.BUS
 {
     class PhieuKhamBenhBUS : BUS<PhieuKhamBenhDTO>
     {
-        public void create(PhieuKhamBenhDTO t)
+        public bool create(PhieuKhamBenhDTO t)
         {
             throw new NotImplementedException();
         }
 
-        public void delete(PhieuKhamBenhDTO t)
+        public bool delete(PhieuKhamBenhDTO t)
         {
             throw new NotImplementedException();
         }
@@ -30,7 +30,7 @@ namespace WindowsSQL.BUS
             throw new NotImplementedException();
         }
 
-        public void update(PhieuKhamBenhDTO t)
+        public bool update(PhieuKhamBenhDTO t)
         {
             throw new NotImplementedException();
         }

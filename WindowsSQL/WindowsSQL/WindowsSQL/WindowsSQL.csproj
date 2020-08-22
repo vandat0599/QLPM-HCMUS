@@ -118,6 +118,9 @@
     <EmbeddedResource Include="UI\PhieuKhamBenh.resx">
       <DependentUpon>PhieuKhamBenh.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\QuanLy.resx">
+      <DependentUpon>QuanLy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\QuanLyBenhNhan.resx">
       <DependentUpon>QuanLyBenhNhan.cs</DependentUpon>
     </EmbeddedResource>

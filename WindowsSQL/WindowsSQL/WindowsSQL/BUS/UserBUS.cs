@@ -10,27 +10,27 @@ namespace WindowsSQL.BUS
 {
     class UserBUS : BUS<UserDTO>
     {
+        public bool create(UserDTO t)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool delete(UserDTO t)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<UserDTO> getAll()
+        {
+            throw new NotImplementedException();
+        }
+
         public UserDTO getById(int id)
         {
             throw new NotImplementedException();
         }
 
-        void BUS<UserDTO>.create(UserDTO t)
-        {
-            throw new NotImplementedException();
-        }
-
-        void BUS<UserDTO>.delete(UserDTO t)
-        {
-            throw new NotImplementedException();
-        }
-
-        List<UserDTO> BUS<UserDTO>.getAll()
-        {
-            throw new NotImplementedException();
-        }
-
-        void BUS<UserDTO>.update(UserDTO t)
+        public bool update(UserDTO t)
         {
             throw new NotImplementedException();
         }

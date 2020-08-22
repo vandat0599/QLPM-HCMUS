@@ -19,15 +19,10 @@ namespace WindowsSQL
 
         private void btnThem_benh_nhan_confirm_Click(object sender, EventArgs e)
         {
-            BenhNhanDAO _DAO = new BenhNhanDAO();
-            _DAO.themBenhNhan(textTen_benh_nhan.Text,textGioi_tinh.Text,Convert.ToInt32( textNam_sinh.Text),textDia_chi.Text);
-            dataGridView1.DataSource = _DAO.danhSachBenhNhan();
         }
 
         private void Form_them_benh_nhan_Load(object sender, EventArgs e)
         {
-            BenhNhanDAO _DAO = new BenhNhanDAO();
-            dataGridView1.DataSource = _DAO.danhSachBenhNhan();
         }
     }
 }

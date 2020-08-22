@@ -14,6 +14,15 @@ namespace WindowsSQL.DTO
         string trieuChung;
         int idLoaiBenh;
 
+        public PhieuKhamBenhDTO(int id, int idBenhNhan, DateTime ngay, string trieuChung, int idLoaiBenh)
+        {
+            this.id = id;
+            this.idBenhNhan = idBenhNhan;
+            this.ngay = ngay;
+            this.trieuChung = trieuChung;
+            this.idLoaiBenh = idLoaiBenh;
+        }
+
         public int Id { get => id; set => id = value; }
         public int IdBenhNhan { get => idBenhNhan; set => idBenhNhan = value; }
         public DateTime Ngay { get => ngay; set => ngay = value; }

@@ -24,3 +24,17 @@ C:\Users\Dat\Downloads\VVD\WindowsSQL\WindowsSQL\WindowsSQL\obj\Debug\WindowsSQL
 C:\Users\Dat\Downloads\VVD\WindowsSQL\WindowsSQL\WindowsSQL\obj\Debug\WindowsSQL.csproj.CoreCompileInputs.cache
 C:\Users\Dat\Downloads\VVD\WindowsSQL\WindowsSQL\WindowsSQL\obj\Debug\WindowsSQL.exe
 C:\Users\Dat\Downloads\VVD\WindowsSQL\WindowsSQL\WindowsSQL\obj\Debug\WindowsSQL.pdb
+C:\Users\Dat\Desktop\QLPM-HCMUS\WindowsSQL\WindowsSQL\WindowsSQL\obj\Debug\WindowsSQL.csprojAssemblyReference.cache
+C:\Users\Dat\Desktop\QLPM-HCMUS\WindowsSQL\WindowsSQL\WindowsSQL\obj\Debug\WindowsSQL.FormDang_nhap.resources
+C:\Users\Dat\Desktop\QLPM-HCMUS\WindowsSQL\WindowsSQL\WindowsSQL\obj\Debug\WindowsSQL.Form_Bac_Si.resources
+C:\Users\Dat\Desktop\QLPM-HCMUS\WindowsSQL\WindowsSQL\WindowsSQL\obj\Debug\WindowsSQL.Form_tao_phieu_kham_benh.resources
+C:\Users\Dat\Desktop\QLPM-HCMUS\WindowsSQL\WindowsSQL\WindowsSQL\obj\Debug\WindowsSQL.Form_Quan_Ly.resources
+C:\Users\Dat\Desktop\QLPM-HCMUS\WindowsSQL\WindowsSQL\WindowsSQL\obj\Debug\WindowsSQL.Form_them_benh_nhan.resources
+C:\Users\Dat\Desktop\QLPM-HCMUS\WindowsSQL\WindowsSQL\WindowsSQL\obj\Debug\WindowsSQL.Properties.Resources.resources
+C:\Users\Dat\Desktop\QLPM-HCMUS\WindowsSQL\WindowsSQL\WindowsSQL\obj\Debug\WindowsSQL.csproj.GenerateResource.cache
+C:\Users\Dat\Desktop\QLPM-HCMUS\WindowsSQL\WindowsSQL\WindowsSQL\obj\Debug\WindowsSQL.csproj.CoreCompileInputs.cache
+C:\Users\Dat\Desktop\QLPM-HCMUS\WindowsSQL\WindowsSQL\WindowsSQL\obj\Debug\WindowsSQL.exe
+C:\Users\Dat\Desktop\QLPM-HCMUS\WindowsSQL\WindowsSQL\WindowsSQL\obj\Debug\WindowsSQL.pdb
+C:\Users\Dat\Desktop\QLPM-HCMUS\WindowsSQL\WindowsSQL\WindowsSQL\bin\Debug\WindowsSQL.exe.config
+C:\Users\Dat\Desktop\QLPM-HCMUS\WindowsSQL\WindowsSQL\WindowsSQL\bin\Debug\WindowsSQL.exe
+C:\Users\Dat\Desktop\QLPM-HCMUS\WindowsSQL\WindowsSQL\WindowsSQL\bin\Debug\WindowsSQL.pdb

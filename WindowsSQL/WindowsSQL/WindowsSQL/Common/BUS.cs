@@ -8,10 +8,10 @@ namespace WindowsSQL.Common
 {
     interface BUS<T>
     {
-        void create(T t);
-        void update(T t);
+        bool create(T t);
+        bool update(T t);
         List<T> getAll();
         T getById(int id);
-        void delete(T t);
+        bool delete(T t);
     }
 }

@@ -13,6 +13,14 @@ namespace WindowsSQL.DTO
         string passWord;
         bool isChuPhongMach;
 
+        public UserDTO(string hoTen, string userName, string passWord, bool isChuPhongMach)
+        {
+            this.hoTen = hoTen;
+            this.userName = userName;
+            this.passWord = passWord;
+            this.isChuPhongMach = isChuPhongMach;
+        }
+
         public string HoTen { get => hoTen; set => hoTen = value; }
         public string UserName { get => userName; set => userName = value; }
         public string PassWord { get => passWord; set => passWord = value; }

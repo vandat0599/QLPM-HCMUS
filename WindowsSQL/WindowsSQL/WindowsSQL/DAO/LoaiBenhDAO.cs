@@ -9,12 +9,12 @@ namespace WindowsSQL.DAO
 {
     class LoaiBenhDAO : DAO<LoaiBenhDTO>
     {
-        public void create(LoaiBenhDTO t)
+        public bool create(LoaiBenhDTO t)
         {
             throw new NotImplementedException();
         }
 
-        public void delete(LoaiBenhDTO t)
+        public bool delete(LoaiBenhDTO t)
         {
             throw new NotImplementedException();
         }
@@ -29,7 +29,7 @@ namespace WindowsSQL.DAO
             throw new NotImplementedException();
         }
 
-        public void update(LoaiBenhDTO t)
+        public bool update(LoaiBenhDTO t)
         {
             throw new NotImplementedException();
         }

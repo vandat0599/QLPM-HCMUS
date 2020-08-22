@@ -10,20 +10,14 @@ using WindowsSQL.DTO;
 
 namespace DAO
 {
-    class DonViTinhDAO: DAO<DonViTinhDTO>
+    class DonViTinhDAO : DAO<DonViTinhDTO>
     {
-        DataProvider dp;
-        public DonViTinhDAO()
-        {
-            dp = new DataProvider();
-        }
-
-        public void create(DonViTinhDTO t)
+        public bool create(DonViTinhDTO t)
         {
             throw new NotImplementedException();
         }
 
-        public void delete(DonViTinhDTO t)
+        public bool delete(DonViTinhDTO t)
         {
             throw new NotImplementedException();
         }
@@ -38,7 +32,7 @@ namespace DAO
             throw new NotImplementedException();
         }
 
-        public void update(DonViTinhDTO t)
+        public bool update(DonViTinhDTO t)
         {
             throw new NotImplementedException();
         }

@@ -9,12 +9,12 @@ namespace WindowsSQL.DAO
 {
     class CachDungDAO : DAO<CachDungDTO>
     {
-        public void create(CachDungDTO t)
+        public bool create(CachDungDTO t)
         {
             throw new NotImplementedException();
         }
 
-        public void delete(CachDungDTO t)
+        public bool delete(CachDungDTO t)
         {
             throw new NotImplementedException();
         }
@@ -29,7 +29,7 @@ namespace WindowsSQL.DAO
             throw new NotImplementedException();
         }
 
-        public void update(CachDungDTO t)
+        public bool update(CachDungDTO t)
         {
             throw new NotImplementedException();
         }
