@@ -65,16 +65,26 @@ namespace DAO
             throw new NotImplementedException();
         }
            
-        public DataTable kiemTraChuPhongMach(string Ten_dang_nhap,string Mat_khau)
+        public UserDTO getUserByUserName(string userName)
         {
-            string cmd = "select La_chu_phong_mach from USERS where Ten_dang_nhap = @Ten_dang_nhap and Mat_khau = @Mat_khau";
+            string cmd = "select * from USERS where Ten_dang_nhap = @userName";
             List<SqlParameter> sqlParameters = new List<SqlParameter>();
-            SqlParameter paramDang_nhap = new SqlParameter("Ten_dang_nhap", Ten_dang_nhap);
-            SqlParameter paramMat_khau = new SqlParameter("Mat_khau", Mat_khau);
-            sqlParameters.Add(paramDang_nhap);
-            sqlParameters.Add(paramMat_khau);
-            return dp.ExecuteQuery(cmd, sqlParameters);
+            SqlParameter p1 = new SqlParameter("userName", userName);
+            sqlParameters.Add(p1);
+            DataTable data = dp.ExecuteQuery(cmd, sqlParameters);
+            if (data.Rows.Count <= 0)
+            {
+                return null;
+            }
+            DataRow row = data.Rows[0];
+            return new UserDTO(
+                    hoTen: row["Ho_ten"].ToString(),
+                    userName: row["Ten_dang_nhap"].ToString(),
+                    passWord: row["Mat_khau"].ToString(),
+                    isChuPhongMach: Convert.ToBoolean(row["La_chu_phong_mach"])
+                    );
         }
+       
 
         public bool update(UserDTO t)
         {

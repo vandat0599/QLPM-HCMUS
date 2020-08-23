@@ -24,10 +24,10 @@ namespace WindowsSQL
             BenhNhanBUS bus = new BenhNhanBUS();
             if (bus.create(new BenhNhanDTO(
                 id: 0,
-                hoTen: "Vo van dat 2",
-                gioiTinh: "Nam 2",
-                namSinh: 1999,
-                diaChi: "Quan Phu Nhuan 2"
+                hoTen: "Vo van dattttttt",
+                gioiTinh: "Nam",
+                namSinh: 2001,
+                diaChi: "Quan blablabla"
                 )))
             {
                 MessageBox.Show("Them thanh cong");

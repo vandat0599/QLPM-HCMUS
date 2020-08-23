@@ -1,6 +1,8 @@
 ﻿using DAO;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +19,17 @@ namespace WindowsSQL.BUS
         public UserBUS()
         {
             dao = new UserDAO();
+        }
+
+        public bool kiemTraChuPhongMach(string userName, string passWord)
+        {
+            UserDTO user = dao.getUserByUserName(userName);
+            return user != null && user.IsChuPhongMach;
+        }
+
+        public UserDTO getUserByUserName(string userName, string passWord)
+        {
+            return dao.getUserByUserName(userName);
         }
 
         public bool create(UserDTO t)
